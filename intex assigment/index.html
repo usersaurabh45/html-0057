@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Navigation Menu</title> 
+  <style> 
+    body { 
+      font-family: Arial; 
+    } 
+ 
+    /* Block element: full width */ 
+    .block { 
+      background-color: #4CAF50; 
+      color: white; 
+      padding: 10px; 
+      margin-bottom: 10px; 
+      display: block; /* full width - new line */ 
+    } 
+ 
+    /* Inline element: flows like text */ 
+    .inline { 
+      background-color: #2196F3; 
+      color: white; 
+      padding: 8px; 
+      display: inline; /* flows inside one line */ 
+      margin-right: 5px; 
+    } 
+ 
+    /* Inline-block element: inline but supports width and height */ 
+    .inline-block { 
+      background-color: #f44336; 
+      color: white; 
+      padding: 8px; 
+      width: 120px; 
+      height: 35px; 
+      display: inline-block; /* box model applies */ 
+      margin-right: 5px; 
+      text-align: center; 
+      line-height: 35px; /* vertical center */ 
+    } 
+ 
+    /* Float left example */ 
+    .float-left { 
+      float: left; /* float left */ 
+      background-color: #ff9800; 
+      color: black;
+       width: 120px; 
+      height: 35px; 
+      text-align: center; 
+      line-height: 35px; 
+      margin-right: 5px; 
+    } 
+ 
+    /* Clear floats */ 
+    .clear { 
+      clear: both; /* moves content below floated elements */ 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <h2><b><U>NAVIGATION MENU</U></b></h2> 
+ 
+  <h3>Block Element    (Full width)</h3> 
+  <div class="block">Block Menu Item</div> 
+ 
+  <h3>Inline Elements (Flow like text)</h3> 
+  <span class="inline">Inline 1</span> 
+  <span class="inline">Inline 2</span> 
+  <span class="inline">Inline 3</span> 
+ 
+  <h3>Inline-block Elements    (Box controls size)</h3> 
+  <div class="inline-block">Inline-block 1</div> 
+  <div class="inline-block">Inline-block 2</div> 
+  <div class="inline-block">Inline-block 3</div> 
+ 
+  <h3>Float Left Elements</h3> 
+  <div class="float-left">Float Left 1</div> 
+  <div class="float-left">Float Left 2</div> 
+  <div class="float-left">Float Left 3</div> 
+ 
+  <!-- Clear floats so below content is not beside float --> 
+  <div class="clear"></div> 
+ 
+  <p>This paragraph is below floated elements because of <code> clear: 
+both;</code>.</p> 
+ 
+</body> 
+</html> 
+ 
+ 
+      
