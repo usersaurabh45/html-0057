@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            padding: 20px;
+            width: 100;
+            height: 100px;
+            background-color: #999;
+            color: #fff;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        nav {
+            text-align: center;
+           width: 100%;
+           height: 100px;
+           background-color: #bca4a4;
+          color: #11401a;
+          line-height: 100px;
+          margin-bottom: 20px;
+        }
+        nav a {
+            padding: 0 25px;
+            text-decoration: none;
+            color: #fff;
+            background: color #3b3b3b; ;
+            font-size: 20px;
+            display:inline-block ;
+        }
+        section{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            background-color:#ccc ;
+            padding: 20px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .left{
+            width:calc(60% - 10px);
+            background-color: #3b3b3b;
+
+        }
+        .right{
+            width: calc(40% - 10px);
+            background-color: #555;
+        }
+        .aside , .section{
+            height: calc(50% - 10px);
+            width: 100%;
+            background-color: #877928;
+            margin-bottom: 20px;
+        }
+        footer{
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="left"></div>
+        <div class="right">
+            <div class="aside"></div>
+            <div class="section"></div>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy;my youtube channel</p>
+    </footer>
+</body>
+</html>
