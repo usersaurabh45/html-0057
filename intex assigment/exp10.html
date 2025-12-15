@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0d6efd;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .search-box input {
+            padding: 7px;
+            border-radius: 4px;
+            border: none;
+            width: 200px;
+        }
+
+        .cart {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .nav-links,
+            .search-box,
+            .cart {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ShopWorld</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+        </div>
+        </ul>
+        <div class="action">
+            <a href="#">Cart 🛒</a>
+            <a href="#"> Login </a>
+        </div>
+        </div>
+        </nav>
+        <section>
+            <h1>Welcome to ShopWorld</h1>
+            <p>All shoping Destination</p>
+        </section>
+</body>
+</html>
