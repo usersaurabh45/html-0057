@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu Demo</title>
+    <style>
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: block; 
+        }
+        .inline-elements span {
+            display: inline;
+            margin-right: 15px;
+            color: blue;
+        }
+        nav ul {
+            list-style: none;
+            background: #444;
+            padding: 10px;
+        }
+        nav ul li {
+            display: inline-block; 
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 12px;
+            background: #666;
+            border-radius: 4px;
+        }
+        nav ul li a:hover {
+            background: #999;
+        }
+        .float-box {
+            width: 30%;
+            height: 120px;
+            background: lightcoral;
+            float: left;
+            margin-right: 15px;
+            padding: 10px;
+        }
+        .clear {
+            clear: both; 
+            padding: 10px;
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Navigation Menu Using CSS Display & Float</h1>
+</header>
+
+<section class="inline-elements">
+    <h3>Inline Example:</h3>
+    <span>Home</span>
+    <span>About</span>
+    <span>Contact</span>
+</section>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!---------------- Float Example ---------------->
+<div class="float-box">Box 1 (Float Left)</div>
+<div class="float-box">Box 2 (Float Left)</div>
+<div class="float-box">Box 3 (Float Left)</div>
+
+<!---------------- Clear Example ---------------->
+<div class="clear">
+    This section uses <strong>clear: both;</strong> to stop floating boxes above.
+</div>
+
+</body>
+</html>
